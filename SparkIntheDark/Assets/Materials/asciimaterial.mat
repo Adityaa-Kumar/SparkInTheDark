@@ -110,7 +110,7 @@ Material:
     - _CharWidth: 0.332
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _Columns: 60
+    - _Columns: 70
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1

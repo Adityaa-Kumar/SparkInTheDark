@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     {
         currentScore += points;
         UpdateScoreUI();
+        
     }
 
     public void OnGhostEaten()

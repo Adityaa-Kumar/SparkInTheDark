@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -5,7 +6,7 @@ public class PlayerController : MonoBehaviour
     [Header("Player Stats")]
     [Tooltip("Number of lives")]
     public int lives = 3;
-
+    public TextMeshProUGUI livesText;
     [Header("Respawn Settings")]
     public Vector3 respawnPosition;
 
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         respawnPosition = transform.position;
+        livesText.text = "Lives: " + lives.ToString();
     }
 
     public void TakeDamage()
@@ -25,9 +27,12 @@ public class PlayerController : MonoBehaviour
         if (isInvincible) return;
 
         lives--;
+        
+
 
         if (lives > 0)
         {
+            livesText.text = "Lives: " + lives.ToString();
             Respawn();
         }
         else
