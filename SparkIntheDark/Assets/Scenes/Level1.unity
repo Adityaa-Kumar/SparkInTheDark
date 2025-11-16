@@ -6259,10 +6259,6 @@ PrefabInstance:
       propertyPath: crossHairSpinningPart
       value: 
       objectReference: {fileID: 126266428}
-    - target: {fileID: 3859070363376921357, guid: b0bbc29d0b241094e8c12de80e5feccf, type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
     - target: {fileID: 5734395909178984472, guid: b0bbc29d0b241094e8c12de80e5feccf, type: 3}
       propertyPath: m_Name
       value: Player
